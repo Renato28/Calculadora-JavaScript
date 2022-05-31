@@ -1,4 +1,4 @@
-function calculadora(){
+var calculadora = () => {
   const operacao = Number(prompt('Escolha uma operacao:\n 1 - Soma (+)\n 2 - subtração (-)\n 3 - multiplicação (*)\n 4 - Divisão real (/)\n 5 - Divisão inteira (%)\n 6 - potenciação (**)'));
 
   if(!operacao || operacao >= 7){
@@ -13,43 +13,79 @@ function calculadora(){
       alert('Erro - paramêtros inválidos!');
       calculadora();
     } else {
-      function soma(){
+      /*function soma(){
+        resultado = n1 + n2;
+        alert(`${n1} + ${n2} = ${resultado}`);
+        novaOperacao();
+      }*/
+
+      var soma = () => {
         resultado = n1 + n2;
         alert(`${n1} + ${n2} = ${resultado}`);
         novaOperacao();
       }
       
-      function subtracao(){
+      /*function subtracao(){
+        resultado = n1 - n2;
+        alert(`${n1} - ${n2} = ${resultado}`);
+        novaOperacao();
+      }*/
+
+      var subtracao = () => {
         resultado = n1 - n2;
         alert(`${n1} - ${n2} = ${resultado}`);
         novaOperacao();
       }
       
-      function multiplicacao(){
+      /*function multiplicacao(){
+        resultado = n1 * n2;
+        alert(`${n1} * ${n2} = ${resultado}`);
+        novaOperacao();
+      }*/
+
+      var multiplicacao = () => {
         resultado = n1 * n2;
         alert(`${n1} * ${n2} = ${resultado}`);
         novaOperacao();
       }
       
-      function divisaoReal(){
+      /*function divisaoReal(){
+        resultado = n1 / n2;
+        alert(`${n1} / ${n2} = ${resultado}`);
+        novaOperacao();
+      }*/
+
+      var divisaoReal = () => {
         resultado = n1 / n2;
         alert(`${n1} / ${n2} = ${resultado}`);
         novaOperacao();
       }
       
-      function divisaoInteira(){
+      /*function divisaoInteira(){
         resultado = n1 % n2;
         alert(`O resto da divisão entre ${n1} e ${n2} é igual a ${resultado}`);
         novaOperacao();
-      }
-      
-      function potenciacao(){
-        resultado = n1 ** n2;
-        alert(`${n1} elevado a ${n2} é igual a ${resultado}`);
+      }*/
+
+      var divisaoInteira = () => {
+        resultado = n1 % n2;
+        alert(`${n1} % ${n2} = ${resultado}`);
         novaOperacao();
       }
       
-      function novaOperacao(){
+      /*function potenciacao(){
+        resultado = n1 ** n2;
+        alert(`${n1} elevado a ${n2} é igual a ${resultado}`);
+        novaOperacao();
+      }*/
+
+      var potenciacao = () => {
+        resultado = n1 ** n2;
+        alert(`${n1} ** ${n2} = ${resultado}`);
+        novaOperacao();
+      }
+      
+      var novaOperacao = () => {
         let opcao = prompt('Deseja fazer outra operacao?\n 1 - Sim\n 2 - Não');
       
         if(opcao == 1){
